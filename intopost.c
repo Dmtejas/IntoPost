@@ -1,5 +1,8 @@
 void infix_to_postfix(char *expression) {
-    char stack[100];  // Stack to hold operators
+    int n;
+    printf("Enter the size of the stack\n");
+    scanf("%d",&n);
+    char stack[n];  // Stack to hold operators
     int top = -1;     // Stack pointer
     char result[100]; // Array to store the postfix expression
     int j = 0;        // Result array pointer
