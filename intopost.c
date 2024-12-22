@@ -23,6 +23,9 @@ void infix_to_postfix(char *expression) {
             }
             top--;  // Pop '('
         }
+        else if (ch == ' ') {
+            continue;
+        }
         // If the character is an operator, handle operator precedence
         else {
             while (top != -1 && precedence(stack[top]) >= precedence(ch)) {
