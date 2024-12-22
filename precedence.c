@@ -7,4 +7,8 @@ int precedence(char op) {
     }
     return 0;
 }
+void print() {
+   printf("Postfix Expression : %s\n",postfix);
+   return;
+}
 
