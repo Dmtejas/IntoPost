@@ -23,7 +23,7 @@ void infix_to_postfix(char *expression) {
             }
             top--;  // Pop '('
         }
-        else if (ch == ' ') {
+        else if (ch == ' ' && ch == '  ') {
             continue;
         }
         // If the character is an operator, handle operator precedence
